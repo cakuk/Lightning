@@ -4,13 +4,17 @@ int endX = 0;
 int endY = 150;
 
 void setup {
-  size(300,300);
-  strokeWeight(1);
+  size(800, 1100);
+  strokeWeight(10);
   background(0);
 }
 void draw() {
+	stroke(0, 0, 100);
+	fill(0, 0, 100, 150);
+	rect(0, 0, 800, 1100);
 	stroke(255);
-	while(endX < 300) {
+	fill(255);
+	while(endX < 800) {
 		endX = startX + Math.random(0, 9);
 		endY = startY + Math.random(0, 9);
 		line(startX, startY, endX, endY);
